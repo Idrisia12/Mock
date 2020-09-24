@@ -1,88 +1,82 @@
-* {
-  box-shadow: border-box;
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600,800&display=swap');
+
+body {
+  background-color: #fafafa;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-body{
-  font-family: serif;
-}
-
-h2{
+header {
   text-align: center;
-  font-weight: 300;
+  margin-top: 50px;
 }
 
-h3{
+header h1 {
+  font-weight: 200;
+  font-size: 38px;
+  color: #4c4e61;
   text-align: center;
-  font-weight: bold;
-  font-size: 25px;
-  margin-top: -10px;
 }
 
-h4, #text {
-  margin-left: 15px;
-}
-
-#topp{
+header p {
+  margin: -20px auto;
+  margin-bottom: 50px;
+  color: #a3a5ae;
   text-align: center;
+}
+
+.box {
+  width: 80%;
+  margin: 40px auto 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-template: ". team ." "superv team calc" "superv karma calc" ". karma .";
+  gap: 20px;
+}
+
+.square {
+  background-color: white;
+  width: 360px;
+  height: 285px;
+  border-radius: 8px;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+ h2 {
+  color: #4c4e61;
+  font-size: 22px;
+}
+
+.square p {
   font-size: 15px;
-  margin-top: -10px;
+  color: #a3a5ae;
 }
 
-img{
-  padding-top: 35px;
-  float: right;
-  margin-top: 20px;
-  margin-right: 10px;
+ .img {
+  text-align: right;
+  margin-top: 50px;
 }
 
-.first{
-width: 350px;
-height: 250px;
-border-top: 5px solid blue;
--webkit-box-shadow: 3px 3px 5px 6px #ccc;
--moz-box-shadow: 3px 3px 5px 6px #ccc;
- box-shadow: 3px 3px 5px 6px #ccc;
-border-radius: 10px;
-float: right;
-margin-top: 100px;
-margin-right: 80px;
+.green {
+  grid-area: superv;
+  border-top: 5px solid #45d3d3;
 }
 
-.second{
-width: 350px;
-height: 250px;
-border-top: 5px solid green;
--webkit-box-shadow: 3px 3px 5px 6px #ccc;
--moz-box-shadow: 3px 3px 5px 6px #ccc;
- box-shadow: 3px 3px 5px 6px #ccc;
-border-radius: 10px;
-float: left;
-margin-top: 100px;
-margin-right: 45px;
-margin-left: 100px;
+.red {
+  grid-area: team;
+  border-top: 5px solid red;
 }
 
-.third{
-width: 350px;
-height: 250px;
-border-top: 5px solid red;
--webkit-box-shadow: 3px 3px 5px 6px #ccc;
--moz-box-shadow: 3px 3px 5px 6px #ccc;
- box-shadow: 3px 3px 5px 6px #ccc;
-border-radius: 10px;
-float: left;
-margin-left: 5px;
+.yellow {
+  grid-area: karma;
+  border-top: 5px solid #fcaf4a;
 }
 
-.fourth{
-width: 350px;
-height: 250px;
-border-top: 5px solid yellow;
--webkit-box-shadow: 3px 3px 5px 6px #ccc;
--moz-box-shadow: 3px 3px 5px 6px #ccc;
- box-shadow: 3px 3px 5px 6px #ccc;
-border-radius: 10px;
-float: right;
-margin-top: 25px;
-margin-right: 52.5px;
+.blue {
+  grid-area: calc;
+  border-top: 5px solid #549ef2;
 }
